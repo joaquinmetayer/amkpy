@@ -1,34 +1,24 @@
-'Mouse and Keyboard Automation in Python'
+'''AMKpy
+   Powerful auto mouse click and keyboard type in python.
+   
+   https://joaquinmetayer.github.io/amkpy/
+   https://github.com/joaquinmetayer/amkpy'''
+
+#imports
 import pyautogui
 import time
+
+#get size
 print(pyautogui.size())
-# moveTo() function - moving the mouse from point a to point b on the x and y axis
-# pyautogui.moveTo(300, 300, duration=3)
-# moveRel function - moves the mouse relative to its previous position
-# pyautogui.moveRel(0, 50, duration=2)
-print(pyautogui.position())
 
-pyautogui.click(70, 20, duration=1)
+#click - X and Y
+#pyautogui.click(70, 40)
 
-# dragTo / dragRel
-# pyautogui.dragTo()
-# pyautogui.dragRel()
-'''
-time.sleep(10)
-pyautogui.moveTo(500, 500, duration=1)
-pyautogui.dragRel(100, 0, duration=1)
-pyautogui.dragRel(0, 100, duration=1)
-pyautogui.dragRel(-100, 0, duration=1)
-pyautogui.dragRel(0, -100, duration=1)
-'''
-#pyautogui.moveTo(1100, 300, duration=1)
-#pyautogui.scroll(-500)
-# pyautogui.scroll(500)
+#time to sleep
+#time.sleep(5)
 
-# Keyboard functions
-'''pyautogui.click(400, 700, duration=1)
-pyautogui.typewrite('Subscribe to Bek Brace channel!')
-Subscribe to Bek Brace channel! 
-'''
-pyautogui.click(300, 300, duration=3)
-pyautogui.hotkey('ctrlleft', 'a')
+#write
+#pyautogui.typewrite('writing hello!!!')
+
+#hotkey
+#pyautogui.hotkey('return')
