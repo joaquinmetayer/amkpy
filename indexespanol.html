@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="./favicon.png" rel="icon">
+    <title>AMKpy</title>
+</head>
+<body>
+        <div class="center">
+            <img src="./favicon.png" id="imglogo" />
+            <h1>AMKpy</h1>
+            <span>Poderosa herramienta auto mouse click y escritura en teclado en python.</span>
+        </div>
+        <hr>
+        <h2>AMKpy dibujando</h2>
+        <img src="./drawpy.png">
+        <hr>
+        <h2>Funcionamiento</h2>
+        <p><a href="./index.html">English version here</a>.<br>
+           <a href="https://www.youtube.com/" target="_blank">Video tutorial aquí</a>.<br>
+           <a href="https://www.joaquinmetayer.com/blog/amkpy.html" target="_blank">Blog sobre esta herramienta aquí</a>.
+        </p>
+        <p>AMKpy es un script en el lenguaje de python donde se pueden automatizar tareas que se realizan con el mouse y el teclado como:</p>
+        <ul>
+            <li>Click</li>
+            <li>Doble click</li>
+            <li>Seleccionar</li>
+            <li>Arrastrar</li>
+            <li>Scroll</li>
+            <li>Escribir texto</li>
+            <li>Comandos de teclado</li>
+        </ul>
+        <p>Y todo lo que tu imaginación te permita… por ejemplo dibujar!</p>
+        <p>Agregando y modificando líneas de código dependiendo de la acción que quieras automatizar, ejecutando el código cada vez que necesites este proceso.</p>
+        <hr>
+        <h2>Guia</h2>
+        <p>Requisitos:</p>
+        <ul>
+            <li>Conocimientos básicos de programación / python.</li>
+            <li>Python instalado.</li>
+        </ul>
+        <br>
+        <p>Pasos:</p>
+        <p>- Importar libreria pyAutogui, colocando dentro de consola:</p>
+        <p> MacOS pip3 install pyautogui<br>
+            Windows pip install pyautogui<br>
+        </p>
+        <p>Encuentra mas sobre PyAutoGUI <a href="https://pyautogui.readthedocs.io/en/latest/" target="_blank">aquí</a>.</p>
+        <p>- Descargar archivos <a href="./AMKpy-files.zip">aquí</a>.</p>
+        <p>- Abrir main.py para calcular el tamaño de tu pantalla en pixeles para colocar nuestros click o acciones usando los ejes X e Y o alto y ancho. Este paso no es necesario pero es de ayuda para saber donde nos colocamos dentro de nuestra pantalla.</p>
+
+        <p> - Sabiendo lo anterior estamos listos para automatizar nuestra tarea, nuestro código sin habilitar ninguna función lo veremos así:</p>
+        <img src="./Screen Shot 2022-08-09 at 00.17.37.png">
+        <p>Dependiendo de lo que queramos hacer, añadiremos una de estas opciones debajo de la otra:</p>
+        <p>- pyautogui.click(70, 40) para el click.<br>
+           - pyautogui.typewrite('writing hello') para escribir.<br>
+           - pyautogui.hotkey('command', 'q') para atajos de teclado.<br>
+           - pyautogui.scroll(-500) para scroll abajo.<br>
+           - pyautogui.scroll(500) para scroll arriba.<br>
+           - time.sleep(2) con el numero de segundos que quiero que se coloque en pausa.</p>
+        <p>Cuatro opciones, hacer clic, escribir, tecla de acceso directo y pausa... simple verdad?</p>
+        <p>Cuando agregue un comando y desee verificar o ejecutar el script, ¡ejecute el archivo! Aprende fallando.</p>
+        <p>No necesitas más para automatizar procesos, ten en cuenta que si necesitas automatizar algo más complejo, esta herramienta NO es para eso, ya que sabemos que existen otras formas más robustas de hacerlo, como el web scraping, entre otras.</p>
+        <p>Mire los ejemplos a continuación para inspirarse.<br>Se pueden hacer muchas cosas con estos sencillos pasos.</p>
+        <hr>
+        <h2>Ejemplos en vivo</h2>
+        <p>Dibujando</p>
+        <embed src="https://www.youtube.com/embed/EfWqtxewuJc">
+        <p>Autopush para nada</p>
+        <embed src="https://www.youtube.com/embed/_f_jH6bvgFU">
+        <hr>
+        <h2>Descarga</h2>
+        <p>Descarga clickeando.</p>
+        <p><a href="./AMKpy-files.zip">Todos los archivos aquí.</a></p>
+        <p><a href="./main.py">main.py</a> con las bases.</p>
+        <p>Ejemplos:</p>
+        <a href="./exampledraw.py">draw.py</a> con el dibujo.<br>
+        <a href="./exampleautopush.py">autopush.py</a> con autopush.<br>
+        <br>
+        <a href="https://github.com/joaquinmetayer/amkpy/" target="_blank">Mira el repositorio en GitHub</a>.
+        <hr>
+        <p id="by">por <a href="https://joaquinmetayer.com" target="_blank">Joaquin Metayer</a></p> 
+</body>
+</html>
