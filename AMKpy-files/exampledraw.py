@@ -15,7 +15,7 @@ import random
 time.sleep(5)
 
 #calling google chrome
-pyautogui.typewrite('chrome')
+pyautogui.typewrite('hola abuela apaga los fideos ')
 pyautogui.hotkey('return')
 
 #waiting load
